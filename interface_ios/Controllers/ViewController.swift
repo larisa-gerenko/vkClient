@@ -50,8 +50,8 @@ class ViewController: UIViewController {
     
     
     @IBAction func loginButtonPressed(_ sender: UIButton) {
-        guard let login = self.loginTextField.text, login == "root",
-              let password = self.passwordTextField.text, password == "1234"
+        guard let login = self.loginTextField.text, login == "",
+              let password = self.passwordTextField.text, password == ""
         else {
             print("error")
             return

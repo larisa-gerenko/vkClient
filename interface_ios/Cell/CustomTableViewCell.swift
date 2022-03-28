@@ -28,6 +28,15 @@ class CustomTableViewCell: UITableViewCell {
         nameLabel.text = group.name
         descriptionLabel.text = group.description
     }
+    
+    func configure(friend: Friend) {
+        
+        if let avatarPath = friend.avatar {
+            fotoImageView.image = UIImage(named: avatarPath)
+        }
+        nameLabel.text = friend.name
+    }
+    
     override func prepareForReuse() {
         super.prepareForReuse()
         fotoImageView.image = nil
