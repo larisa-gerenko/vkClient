@@ -13,6 +13,8 @@ class GalleryViewController: UIViewController {
     
     let reuseIdentificator = "reuseIdentificator"
     var fotoArray = [String]()
+    var modalView: UIView?
+    var imageItem: UIImageView?
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -24,10 +26,28 @@ class GalleryViewController: UIViewController {
         collectionView.register(UINib(nibName: "GalleryCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: reuseIdentificator)
         collectionView.delegate =  self
         collectionView.dataSource = self
+        modalView = UIView(frame: self.view.frame)
+        modalView?.backgroundColor = #colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)
+        modalView?.tag = 100
+        imageItem = UIImageView(frame: modalView!.frame)
+        let tap = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(_:)))
+        modalView?.addGestureRecognizer(tap)
+        
     }
     
-
-   
+    @objc func handleTap(_ sender: UITapGestureRecognizer? = nil) {
+        if let viewWithTag = self.view.viewWithTag(100) {
+                viewWithTag.removeFromSuperview()
+        }else{
+                print("No!")
+        }
+    }
+    
+    @objc func checkAction(sender : UITapGestureRecognizer) {
+        if let uiView = self.view.viewWithTag(100) {
+            uiView.removeFromSuperview()
+        }
+    }
 
 }
 
@@ -47,13 +67,15 @@ extension GalleryViewController: UICollectionViewDataSource {
 extension GalleryViewController: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath){
-        let view = UIView(frame: self.view.frame)
-        view.backgroundColor = #colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)
-        let imageView = UIImageView(frame: view.frame)
-        self.view.addSubview(view)
-        view.addSubview(imageView)
-        imageView.image = UIImage(named: fotoArray[indexPath.item])
-        imageView.contentMode = .scaleAspectFit
+        
+        guard let modalView = self.modalView else { return }
+        guard let imageItem = self.imageItem else { return }
+        
+        self.view.addSubview(modalView)
+        modalView.addSubview(imageItem)
+        
+        imageItem.image = UIImage(named: fotoArray[indexPath.item])
+        imageItem.contentMode = .scaleAspectFit
     }
     
 }
