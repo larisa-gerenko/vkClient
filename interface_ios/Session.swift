@@ -9,13 +9,12 @@ import Foundation
 
 
 class Session {
-    static let shared = Session(token: "", userID: 0)
+    static let shared = Session()
     
-    let token: String
-    let userID: Int
+    let token: String = ""
+    let userID: Int = 0
     
-    private init(token: String, userID: Int){
-        self.token = token
-        self.userID = userID
+    private init(){
+      
     }
 }
