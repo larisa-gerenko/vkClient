@@ -55,7 +55,6 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="4uF-KI-fN4"/>
                                     <constraint firstItem="Dx0-DC-qnJ" firstAttribute="centerY" secondItem="OZL-zr-lSt" secondAttribute="centerY" id="7ND-6v-YjW"/>
-                                    <constraint firstItem="6fV-FS-gKb" firstAttribute="leading" secondItem="zKy-vc-QZz" secondAttribute="leading" constant="268" id="F8H-WW-zYj"/>
                                     <constraint firstItem="Dx0-DC-qnJ" firstAttribute="centerX" secondItem="OZL-zr-lSt" secondAttribute="centerX" id="Gcl-xd-d03"/>
                                     <constraint firstItem="Dx0-DC-qnJ" firstAttribute="width" secondItem="OZL-zr-lSt" secondAttribute="width" multiplier="1.76316" id="LvX-wp-MbW"/>
                                     <constraint firstItem="Dx0-DC-qnJ" firstAttribute="height" secondItem="OZL-zr-lSt" secondAttribute="height" multiplier="1.5" id="Qja-Ec-6eU"/>
