@@ -34,9 +34,18 @@
                             <constraint firstAttribute="width" secondItem="7dt-cr-bjC" secondAttribute="height" multiplier="1:1" id="0qu-nz-d2D"/>
                         </constraints>
                     </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xc4-oq-Mkd">
+                        <rect key="frame" x="15" y="2" width="94" height="94"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <connections>
+                            <action selector="pressImageButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="K1B-Z1-fyG"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <color key="backgroundColor" red="0.88921053288915242" green="0.82172737954807828" blue="0.97496082027982955" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                 <constraints>
+                    <constraint firstItem="Xc4-oq-Mkd" firstAttribute="width" secondItem="7dt-cr-bjC" secondAttribute="width" id="0IA-Ip-dus"/>
                     <constraint firstAttribute="bottom" secondItem="7dt-cr-bjC" secondAttribute="bottom" constant="2" id="2Ve-jw-fuy"/>
                     <constraint firstItem="X9p-nd-u7X" firstAttribute="leading" secondItem="7dt-cr-bjC" secondAttribute="trailing" constant="16" id="6W4-hU-ThR"/>
                     <constraint firstItem="7dt-cr-bjC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="2" id="8QK-rY-vEF"/>
@@ -44,8 +53,11 @@
                     <constraint firstAttribute="trailing" secondItem="X9p-nd-u7X" secondAttribute="trailing" constant="16" id="ZGR-4C-xXX"/>
                     <constraint firstAttribute="centerY" secondItem="g50-eI-gyL" secondAttribute="bottom" id="ZK4-gN-k2T"/>
                     <constraint firstItem="g50-eI-gyL" firstAttribute="leading" secondItem="7dt-cr-bjC" secondAttribute="trailing" constant="16" id="cIc-cn-ci9"/>
+                    <constraint firstItem="Xc4-oq-Mkd" firstAttribute="height" secondItem="7dt-cr-bjC" secondAttribute="height" id="p9y-lE-JA1"/>
                     <constraint firstAttribute="bottom" secondItem="X9p-nd-u7X" secondAttribute="bottom" id="pOv-HL-dt6"/>
                     <constraint firstItem="7dt-cr-bjC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="pij-CV-FNq"/>
+                    <constraint firstItem="Xc4-oq-Mkd" firstAttribute="centerX" secondItem="7dt-cr-bjC" secondAttribute="centerX" id="sTn-QG-QgT"/>
+                    <constraint firstItem="Xc4-oq-Mkd" firstAttribute="centerY" secondItem="7dt-cr-bjC" secondAttribute="centerY" id="tGI-Se-FE0"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>

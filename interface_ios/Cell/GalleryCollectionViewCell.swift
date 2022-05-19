@@ -56,6 +56,12 @@ class GalleryCollectionViewCell: UICollectionViewCell {
         } else {
             self.count -= 1
         }
-        counterLabel.text = String(self.count)
+        UIView.transition(with: counterLabel,
+                          duration: 0.5,
+                          options: .transitionFlipFromTop,
+                          animations: {
+            self.counterLabel.text = String(self.count)
+        })
+        
     }
 }

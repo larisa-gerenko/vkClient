@@ -70,17 +70,60 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9fv-pJ-rs0">
+                                                <rect key="frame" x="165" y="272" width="20" height="20"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="20" id="YqC-FT-dgv"/>
+                                                    <constraint firstAttribute="width" constant="20" id="pI5-jX-lsL"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RBr-uc-FOc">
+                                                <rect key="frame" x="197" y="272" width="20" height="20"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="20" id="OlM-Cb-ukr"/>
+                                                    <constraint firstAttribute="height" constant="20" id="dft-Fv-z1z"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gCk-kG-E9t">
+                                                <rect key="frame" x="229" y="272" width="20" height="20"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="20" id="6ze-eb-xLC"/>
+                                                    <constraint firstAttribute="height" constant="20" id="ih8-kC-HV7"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
                                         <constraints>
                                             <constraint firstItem="K19-uE-TKA" firstAttribute="leading" secondItem="5F6-K8-bV1" secondAttribute="leading" constant="16" id="1Kv-4r-bUh"/>
+                                            <constraint firstItem="RBr-uc-FOc" firstAttribute="leading" secondItem="9fv-pJ-rs0" secondAttribute="trailing" constant="12" id="54Q-NY-SJk"/>
                                             <constraint firstAttribute="bottom" secondItem="OeY-7Q-fUf" secondAttribute="bottom" constant="16" id="7iP-y0-XW8"/>
                                             <constraint firstItem="4Dd-Qn-3Vx" firstAttribute="leading" secondItem="fkZ-4r-xaW" secondAttribute="leading" id="9kL-Z0-aab"/>
                                             <constraint firstItem="Zey-vg-8rE" firstAttribute="leading" secondItem="5F6-K8-bV1" secondAttribute="leading" constant="16" id="CTd-hX-EBf"/>
+                                            <constraint firstItem="4Dd-Qn-3Vx" firstAttribute="top" secondItem="9fv-pJ-rs0" secondAttribute="bottom" constant="34" id="CwR-Xe-QuQ"/>
                                             <constraint firstItem="OeY-7Q-fUf" firstAttribute="top" secondItem="K19-uE-TKA" secondAttribute="bottom" constant="49" id="Cxi-1U-VeX"/>
                                             <constraint firstItem="Qsd-wI-QKD" firstAttribute="centerX" secondItem="5F6-K8-bV1" secondAttribute="centerX" constant="8" id="Glu-7c-kLJ"/>
+                                            <constraint firstItem="9fv-pJ-rs0" firstAttribute="leading" secondItem="5F6-K8-bV1" secondAttribute="leading" constant="165" id="GzO-wa-nFh"/>
                                             <constraint firstItem="nuM-eX-nRy" firstAttribute="top" secondItem="4Dd-Qn-3Vx" secondAttribute="bottom" constant="5" id="H7O-5g-1YZ"/>
                                             <constraint firstItem="fkZ-4r-xaW" firstAttribute="leading" secondItem="5F6-K8-bV1" secondAttribute="leading" constant="16" id="HvX-yR-LYz"/>
+                                            <constraint firstItem="gCk-kG-E9t" firstAttribute="centerY" secondItem="RBr-uc-FOc" secondAttribute="centerY" id="QlP-0z-XDY"/>
                                             <constraint firstItem="OeY-7Q-fUf" firstAttribute="centerX" secondItem="5F6-K8-bV1" secondAttribute="centerX" id="Ssv-VF-7VK"/>
                                             <constraint firstItem="4Dd-Qn-3Vx" firstAttribute="leading" secondItem="5F6-K8-bV1" secondAttribute="leading" constant="16" id="UCS-pk-6cG"/>
                                             <constraint firstItem="4Dd-Qn-3Vx" firstAttribute="top" secondItem="fkZ-4r-xaW" secondAttribute="bottom" constant="80" id="UJq-wT-HL6"/>
@@ -90,12 +133,14 @@
                                             <constraint firstItem="K19-uE-TKA" firstAttribute="trailing" secondItem="nuM-eX-nRy" secondAttribute="trailing" id="Yii-L1-j7I"/>
                                             <constraint firstItem="OeY-7Q-fUf" firstAttribute="width" secondItem="5F6-K8-bV1" secondAttribute="width" multiplier="2:3" id="bU3-fl-pZP"/>
                                             <constraint firstItem="Zey-vg-8rE" firstAttribute="leading" secondItem="4Dd-Qn-3Vx" secondAttribute="leading" id="cfW-GF-mBh"/>
+                                            <constraint firstItem="gCk-kG-E9t" firstAttribute="leading" secondItem="RBr-uc-FOc" secondAttribute="trailing" constant="12" id="dYk-wK-fC3"/>
                                             <constraint firstItem="nuM-eX-nRy" firstAttribute="centerX" secondItem="5F6-K8-bV1" secondAttribute="centerX" id="dcT-kn-OgJ"/>
                                             <constraint firstItem="OeY-7Q-fUf" firstAttribute="centerX" secondItem="5F6-K8-bV1" secondAttribute="centerX" id="hvZ-ri-knG"/>
                                             <constraint firstItem="Qsd-wI-QKD" firstAttribute="width" secondItem="5F6-K8-bV1" secondAttribute="width" multiplier="0.5" id="ild-2X-GRT"/>
                                             <constraint firstAttribute="trailing" secondItem="fkZ-4r-xaW" secondAttribute="trailing" constant="16" id="iop-9M-Xaw"/>
                                             <constraint firstItem="K19-uE-TKA" firstAttribute="top" secondItem="Zey-vg-8rE" secondAttribute="bottom" constant="5" id="ohS-82-4Lr"/>
                                             <constraint firstItem="nuM-eX-nRy" firstAttribute="leading" secondItem="5F6-K8-bV1" secondAttribute="leading" constant="16" id="srp-sx-RQV"/>
+                                            <constraint firstItem="RBr-uc-FOc" firstAttribute="centerY" secondItem="9fv-pJ-rs0" secondAttribute="centerY" id="tWi-Ri-9Yp"/>
                                             <constraint firstItem="Zey-vg-8rE" firstAttribute="top" secondItem="nuM-eX-nRy" secondAttribute="bottom" constant="11" id="uvW-G8-JmK"/>
                                         </constraints>
                                     </view>
@@ -124,12 +169,15 @@
                         <outlet property="ScrollView" destination="HFp-ig-30r" id="xnA-rN-ZvX"/>
                         <outlet property="loginTextField" destination="nuM-eX-nRy" id="JOh-dI-cpC"/>
                         <outlet property="passwordTextField" destination="K19-uE-TKA" id="uWH-yt-lLu"/>
+                        <outlet property="view1" destination="9fv-pJ-rs0" id="PiG-2x-gcf"/>
+                        <outlet property="view2" destination="RBr-uc-FOc" id="5gx-Xd-sBC"/>
+                        <outlet property="view3" destination="gCk-kG-E9t" id="iQA-8W-baE"/>
                         <segue destination="Yci-dK-9b9" kind="presentation" identifier="fromLoginToTabBarGeque" modalPresentationStyle="fullScreen" id="Chg-k5-7xY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-232" y="189"/>
+            <point key="canvasLocation" x="-233.33333333333334" y="188.83928571428569"/>
         </scene>
         <!--My groups-->
         <scene sceneID="gA5-5g-PHd">

@@ -94,7 +94,10 @@ extension FriendsViewController: UITableViewDataSource {
         
         guard let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as? CustomTableViewCell else {return UITableViewCell()}
         
-        cell.configure(friend: friendsArray[indexPath.row])
+        cell.configure(friend: friendsArray[indexPath.row], completion: {[weak self] in
+            guard let self = self else {return}
+            self.performSegue(withIdentifier: self.fromFriendsToGallery, sender: self.friendsArray[indexPath.row].fotos)
+        })
         return cell
     }
 }
